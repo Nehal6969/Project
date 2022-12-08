@@ -1,0 +1,97 @@
+<html>
+<head>
+<link rel="stylesheet" href="style_signin.css">
+
+</head>
+     <body align="center">
+     <h1>REGISTRATION FORM</h1>
+     <form  name="register" onsubmit="details()">
+    <b>
+        First Name :
+    </b>
+     <input type="text" name="fn" placeholder="Enter First Name" required>
+     <br/><br/>
+	 <b>
+        Last Name :
+    </b>
+    <input type="text" name="ln" placeholder="Enter Last Name" required>
+    <br/><br/>
+	 <b>
+        E-mail :
+    </b>
+    <input type="email" name="Email" placeholder="Enter E-mail" required>
+    <br/><br/>
+	 <b>
+        ser name:</b><input type="username" name"username" placeholder="Enter user name" id ="0" required>
+        <br/><br/>
+     <b>
+        Create Password :</b><input type="password" name="up" placeholder="Enter password" id="1" required>
+        <br/><br/>
+     <b>
+        Re-enter Password :
+    </b> 
+    <input type="password"  name="rp" placeholder="Re-enter password" id="2" required>
+    <br/><br/>
+	 <b>
+        Phone Number :
+    </b>
+    <input type="text" name="pn" placeholder="Enter Phone no" maxlength=10 id="3"required>
+    <br/><br/>
+	 <b>
+        Alternate Phone Number :</b> <input type="text" name="Phone_no"  placeholder="Enter Alternate Phone no" id="4" required><b>
+    </br></br>
+    
+	 <b>
+        Gender :
+    </b> 
+        <input type="radio" name="r1" value="male" required>Male<br/>
+        <input type="radio" name="r1" value="female" required>Female<br/>
+	 <b>
+        Branch:	
+    </b><select name="branch">
+	    <option value="courses">select your branch</option>
+        <option value="cse">computer science and Engineering</option>
+		<option value="ece">Electronics and Communication Engineering</option>
+		<option value="mct">mechatronics and Engineering</option>
+		<option value="it">Information Technology</option>
+		<option value="civil">civil Engineering</option>
+		</select>
+        <br/><br/>
+		
+	<b>
+    junior/senior/admin:
+    </b> 
+    <input type="radio" name="j1" value="jr" required>Junior<br/>
+	<input type="radio" name="j1" value="sr" required>Senior<br/>
+	<input type="radio" name="j1" value="ad" required>admin<br/><br/>
+					 
+	<b>
+        Upload Resume :
+    </b> 
+    <input type="file" name="f1"><br/><br/>
+    <input type="submit" value="submit">
+    <input type="reset" value="clear">
+					 
+    </form>
+<script type="text/javascript">
+
+  function details()
+  {
+  var p0=document.getElementById("0").value;
+  var p1=document.getElementById("1").value;
+  var p2=document.getElementById("2").value;
+  var ph1=document.getElementById("3").value;
+  var ph2=document.getElementById("4").value;
+  if(p1!=p2)
+  {
+  alert("password is not matched");
+  }
+  if(ph1.length!=10&&ph2.length!=10)
+  {
+  alert("Enter valid phone Number");
+  }
+  }
+  </script>
+  </body>
+ 
+ </html>
